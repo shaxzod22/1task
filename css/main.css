@@ -38,6 +38,7 @@ body{
     height: 100vh;
     font-family:sans-serif;
     background-image: linear-gradient(200deg, rgb(103, 103, 255) 40% ,white 40%);
+    overflow: hidden;
 }
 
 .main-heading{
