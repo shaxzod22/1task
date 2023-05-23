@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+li ,ol,ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family:sans-serif;
+    background-image: linear-gradient(200deg, rgb(103, 103, 255) 40% ,white 40%);
+}
+
+.main-heading{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 380px;
+    width: 100vw;
+    border-radius: 10px;
+    padding: 14px 20px;
+    min-height: 200px;
+    background-color: rgb(39, 38, 38);
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.card__heading{
+    align-self: flex-end;
+    color: white;
+}
+
+.card__chip-img{
+    width: 50px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.card__input{
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    padding-bottom: 0;
+    outline: none;
+    color: white;
+    font-size: 25px;
+    font-family: monospace;
+    padding-left: 0;
+    
+}
+.card__input::placeholder{
+    color: rgba(255, 255, 255, 0.735);
+    font-size: 20px;
+}
+
+.first__four{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.logo-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.expiry-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nameAndExpiry{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.month{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.month_value{
+    display: flex;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.valid_text{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.name{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: normal;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 380px;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 380px;
+}
+
+.none{
+    display: none;
+}
+
+.inner_box{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.inner_heading{
+    font-size: 18px ;
+}
+.inner_title{
+    font-size: 15px ;
+    opacity: 0.8;
+}
+
+.aylana{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    border-radius: 34px;
+}
+.aylana::before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.none:checked ~ .aylana{
+    background-color: #2196F3;
+}
+.none:checked ~ .aylana::before{
+    transform: translateX(26px);
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: blue;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.img_none{
+    display: none;
+}
+
+.error_text{
+    position: absolute;
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    bottom: 70px;
+    }

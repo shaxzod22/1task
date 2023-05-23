@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="main-heading">CARD</h1>
+    <form class="form" action="https://echo.htmlacademy.ru/">
+      <div class="card">
+        <h2 class="card__heading">Your Bank</h2>
+        <img
+          src="./img/chip.png"
+          alt="chip img"
+          class="card__chip-img"
+          width="50"
+          height="40"
+        />
+
+        <input
+          type="number"
+          name="card number"
+          class="card__input"
+          required
+          placeholder="Karta raqamini kiriting"
+        />
+
+        <p class="first__four">xxxx</p>
+
+        <div class="logo-box">
+          <div class="nameAndExpiry">
+            <div class="expiry-box">
+              <p class="month">month/year</p>
+              <p class="month_value">
+                <span class="valid_text">VALID THRU</span> 12/99
+              </p>
+            </div>
+
+            <h3 class="name">MAX MUSTERMANN</h3>
+          </div>
+
+          <div class="card__img__box">
+            <img
+              class="img_none uzcard"
+              src="./img/Uzcard_Logo_.png"
+              alt="uzcard"
+              width="40"
+              height="50"
+            />
+            <img
+              class="img_none humo"
+              src="./img/humo.png"
+              alt="humo"
+              width="60"
+              height="40"
+            />
+            <img
+              class="img_none masterCard"
+              src="./img/MasterCard_early_1990s_logo.png"
+              alt="masterCard"
+              width="60"
+              height="40"
+            />
+            <img
+              class="img_none visa"
+              src="./img/visa.png"
+              alt="visa"
+              width="70"
+              height="40"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="checkboxes">
+        <label class="label" for="lockCard">
+          <input
+            type="radio"
+            class="none"
+            name="payment method"
+            required
+            value="lock card"
+            id="lockCard"
+          />
+          <div class="inner_box">
+            <img src="./img/padlock.png" alt="padlock" width="25" height="25" />
+            <div class="inner__input-box">
+              <h4 class="inner_heading">Lock card</h4>
+              <p class="inner_title">You can unlock it later</p>
+            </div>
+          </div>
+
+          <span class="aylana"></span>
+        </label>
+        <label class="label" for="abroad">
+          <input
+            type="radio"
+            class="none"
+            name="payment method"
+            required
+            value="payment abroad"
+            id="abroad"
+          />
+          <div class="inner_box">
+            <img
+              src="./img/planeMode.png"
+              alt="plane img"
+              width="25"
+              height="25"
+            />
+            <div class="inner__input-box">
+              <h4 class="inner_heading">Payments abroad</h4>
+              <p class="inner_title">Enable your card abroad</p>
+            </div>
+          </div>
+
+          <span class="aylana"></span>
+        </label>
+        <label class="label" for="online">
+          <input
+            type="radio"
+            class="none"
+            name="payment method"
+            required
+            value="online payments"
+            id="online"
+          />
+          <div class="inner_box">
+            <img
+              src="./img/monitor.png"
+              alt="desktop img"
+              width="25"
+              height="25"
+            />
+            <div class="inner__input-box">
+              <h4 class="inner_heading">Online payments</h4>
+              <p class="inner_title">Enable online transactions</p>
+            </div>
+          </div>
+          <span class="aylana"></span>
+        </label>
+        <label class="label" for="atm">
+          <input
+            type="radio"
+            class="none"
+            name="payment method"
+            required
+            value="ATM withdrawals"
+            id="atm"
+          />
+          <div class="inner_box">
+            <img src="./img/coin.png" alt="coin img" width="25" height="25" />
+            <div class="inner__input-box">
+              <h4 class="inner_heading">ATM withdrawals</h4>
+              <p class="inner_title">Enable ATM withdrawals</p>
+            </div>
+          </div>
+
+          <span class="aylana"></span>
+        </label>
+      </div>
+
+      <button class="btn" type="submit">Yuborish</button>
+    </form>
+    <p class="error_text"></p>
+    <script src="./js/styles.js"></script>
+  </body>
+</html>
