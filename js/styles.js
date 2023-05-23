@@ -79,3 +79,9 @@ cardInput.addEventListener('input', function(e){
         errorText.textContent = ''
     }
 })
+
+// 1.O'zgaruvchilarni keltirib oldim.
+// 2.Kn inputga hodisa qo'shdim va classname qo'shuvchi va olib tashlovchi funksiya yozdim.
+// 3.Agar dedim boshidagi 4 ta element berilgan parametrga teng bo'lsa .none(none da display:none; style i berilgan) degan classnameni ol qolganlariga qo'sh dedim.
+// 4.undan kngi 4 ta element berilgan parametrga teng bo'lsa your bank so'zini o'zgartir dedim.
+// 5.agar inputda yozilgan elementning length i 16 tadan oshsa pastdagi <p> da error ni chiqar dedim va unga css orqali style berdim.
